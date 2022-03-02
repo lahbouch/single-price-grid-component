@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+:root {
+  --Cyan: hsl(179, 62%, 43%);
+  --light-Cyan: rgba(111, 216, 214, 0.9);
+  --Bright-Yellow: hsl(71, 73%, 54%);
+  --Light-Gray: hsl(204, 43%, 93%);
+  --Grayish-Blue: hsl(218, 22%, 67%);
+  --font-size: 16px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  background-color: var(--Light-Gray);
+  height: 100vh;
+  font-size: var(--font-size);
+}
+
+.container {
+  margin: 15px 15px;
+  box-shadow: 0px 10px 20px rgba(105, 111, 121, 0.2);
+  border-radius: 10px;
+}
+
+.top-section {
+  background-color: white;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+  border-radius: 10px 10px 0 0;
+}
+
+.top-section h1 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--Cyan);
+}
+
+.top-section h2 {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--Bright-Yellow);
+  line-height: 25px;
+}
+
+.top-section p {
+  line-height: 25px;
+  font-size: 0.9rem;
+  color: var(--Grayish-Blue);
+}
+
+.left-section {
+  background-color: var(--Cyan);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.left-section h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: white;
+}
+
+.left-section strong {
+  font-size: 1.8rem;
+  color: white;
+  margin-right: 10px;
+}
+
+.left-section span {
+  color: var(--Light-Gray);
+  opacity: 0.7;
+}
+
+.left-section p {
+  line-height: 25px;
+  font-size: 0.9rem;
+  color: var(--Light-Gray);
+}
+
+.left-section button {
+  border-radius: 5px;
+  height: 45px;
+  border: 0;
+  color: white;
+  background-color: var(--Bright-Yellow);
+  font-weight: 700;
+  font-size: 0.9rem;
+  box-shadow: 0px 10px 20px rgba(105, 111, 121, 0.5);
+  cursor: pointer;
+}
+
+.right-section {
+  background-color: var(--light-Cyan);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  color: white;
+}
+
+.right-section h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: white;
+}
+
+.right-section p {
+  line-height: 25px;
+  font-size: 0.9rem;
+  color: white;
+  padding-right: 50px;
+  opacity: 0.8;
+}
+
+.bottom-section {
+  border-radius: 0px 0px 10px 10px;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  body {
+    display: flex;
+    align-items: center;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    max-width: 630px;
+    min-height: 450px;
+    margin: 0 auto;
+  }
+
+  .top-section {
+    padding: 40px;
+    row-gap: 10px;
+  }
+
+  .bottom-section {
+    display: flex;
+  }
+  .left-section {
+    min-width: 50%;
+    padding: 40px;
+    justify-content: space-around;
+  }
+
+  .left-section p {
+    margin-top: -20px;
+  }
+
+  .left-section div {
+    margin-top: -20px;
+  }
+
+  .right-section {
+    padding-right: 40px;
+  }
+}
